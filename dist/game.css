@@ -101,7 +101,7 @@ li {
 
 .top-hints{
     font-family: blocky;
-    font-size: 12px;
+    font-size: 15px;
     letter-spacing: 2px;
     padding: 0px;
 }
@@ -124,7 +124,7 @@ li {
 .side-hints{
     padding: 0px;
     font-family: blocky;
-    font-size: 12px;
+    font-size: 15px;
     display: flex;
     flex-direction: row;
 }
