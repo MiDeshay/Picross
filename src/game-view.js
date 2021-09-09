@@ -91,7 +91,9 @@ class View{
             })
         }
     }
-                
+                //I thought I would add music so I wanted to avoid reloading so it persisted.
+
+
                 //This deletes the old game grid
                 //this is neccessary since the grid actually persists
                 //through the reset process
