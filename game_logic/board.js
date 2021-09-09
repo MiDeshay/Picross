@@ -7,8 +7,33 @@ class Board{
         this.winning = false;
         this.grid = this.makeGrid()
         this.makeHints.bind(this)()
+        this.allTileEls = document.getElementsByClassName("grid-tile");
 
     }
+
+    // handleMouseHover(){
+        
+    // }
+
+    // getHorizantalHoverLines(tileEl){
+    //     let arr = [];
+    //     for(let i = 0; i < this.size; i++){
+    //         for(let j = 0; j < this.size; j++){
+    //             let column = tileEl.getAttribute("y-cor");
+    //             let otherTile = this.allTileEls[i]
+            
+    //         }
+    //     }
+
+    // }
+
+    // getVerticalHoverLines(){
+
+    // }
+
+    // renderlines(){
+
+    // }
 
     async winTheGame(){
         if (!this.winning){

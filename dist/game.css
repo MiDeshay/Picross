@@ -382,3 +382,7 @@ li {
 #close-button-image:hover{
     content: url("../pictures/returnButtonSelected.png");
 }
+
+#lives-heart:hover{
+    content: url("../pictures/HeartSecret.png");
+}

@@ -242,7 +242,7 @@ function puzzleGenerator(length, name, array){
     let ballPuzzle = puzzleGenerator(5, "Red Ball", ballArr);
 
     let cherryPuzzle = puzzleGenerator(10, "Cherry", cherryArray);
-    let pickachuPuzzle = puzzleGenerator(10, "'Pikachu' by Martego", pikachuArray);
+    let pickachuPuzzle = puzzleGenerator(10, "Pikachu by Martego", pikachuArray);
     let pinocchioPuzzle = puzzleGenerator(10, "Pinocchio", PinocchioArray );
     let miniPatternPuzzle = puzzleGenerator(10, "Mini Pattern by aleonblue", miniPatternArray);
     let orangePuzzle = puzzleGenerator(10,"Orange N Stuff", OrangeArray )
