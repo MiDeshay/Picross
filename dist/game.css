@@ -109,11 +109,10 @@ li {
 
 #puzzle-title{
     display: none;
-    position: relative;
+    position: absolute;
     text-align: center;
     /* For 10x10 */
-    bottom: 20px;
-    right: 40px;
+    top: 100px;
 
     /* For 5x5 */
     /* top: 20px;

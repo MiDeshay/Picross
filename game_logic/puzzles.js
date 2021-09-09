@@ -261,6 +261,8 @@ function puzzleGenerator(length, name, array){
         amongUsPuzzle
     ]
 
+    
+
 //function stringtopuzzle takes a length, a string, an array
 //returns a puzzle object
 

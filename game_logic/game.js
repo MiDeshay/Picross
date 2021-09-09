@@ -103,6 +103,11 @@ class Game{
             for(let i = 0; i < winButtons.length; i++){
                 winButtons[i].style.display = "flex";
             }
+
+            let gameBoard = document.getElementById("game-board");
+            gameBoard.style.position = "fixed";
+            gameBoard.style.marginLeft = "-140px"
+            gameBoard.style.marginTop = "50px"
             
             let puzzleTitle = document.getElementById("puzzle-title");
             if(puzzleTitle.firstChild){

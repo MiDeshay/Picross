@@ -71,6 +71,7 @@ class View{
         let pauseScreen = document.getElementById("pause-menu-screen");
         let gameOverScreen = document.getElementById("game-over-screen");
         let gameScreen = document.getElementById("game-screen");
+        let gameBoard = document.getElementById("game-board");
         let puzzleTitle = document.getElementById("puzzle-title");
         let livesContainer = document.getElementById("lives-container")
         let pauseButton = document.getElementById("pause-button")
@@ -108,7 +109,9 @@ class View{
                 this.createHtmlGrid();
                 
                 this.game = new Game(this.boardSize, this.puzzleObject);
-    
+                
+                gameBoard.style.position = "relative";
+                gameBoard.style.margin = "0px";
                 cursorToggle.style.display = "initial";
                 puzzleTitle.style.display = "none";
                 pauseButton.style.display = "initial";
@@ -117,6 +120,7 @@ class View{
                 pauseScreen.style.display = "none";
                 gameOverScreen.style.display = "none"
                 gameScreen.style.display = "flex";
+
 
             //nudging heart into right spot
                 let livesHeartPic = document.getElementById("lives-heart");
