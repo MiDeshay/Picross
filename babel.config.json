@@ -1,4 +1,11 @@
 {
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "watch": "webpack --watch --mode=development",
+    "build": "webpack --mode=production"
+  },
     "presets": [
       [
         "@babel/env",
