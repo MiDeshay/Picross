@@ -1,6 +1,7 @@
 import View from "./game-view";
 import {allPuzzles} from "../game_logic/puzzles";
 
+
 if(document.URL.includes("game.html")){
     document.addEventListener("DOMContentLoaded", function(){
 

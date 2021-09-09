@@ -25,7 +25,7 @@ class View{
         let allHomeButtons = document.getElementsByClassName("home-button")
         for(let i = 0; i < allHomeButtons.length; i++){
             allHomeButtons[i].addEventListener("click", function(){
-                window.location.replace('../dist/index.html')
+                window.location.replace('../index.html')
             })
         }
         
