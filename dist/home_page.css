@@ -95,7 +95,7 @@ li{
     line-height: 25px;
 }
 
-#number-rules li{
+.number-rules li{
     list-style-type: square;
     margin-bottom: 5px;
 }

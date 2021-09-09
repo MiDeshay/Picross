@@ -15,10 +15,38 @@ class View{
         this.createHtmlGrid.bind(this)();
         this.handlePauseButtonClick();
         this.handleContinueButtonClick();
+        this.handleSpaceBarToggle.bind(this)();
         
         this.game = new Game(this.boardSize, this.puzzleObject);
       
         this.handleNewGameButtonClick.bind(this)();
+
+        
+          
+    }
+    handleSpaceBarToggle(){
+        let fillButton = document.getElementById("toggle-fill");
+        let xButton = document.getElementById("toggle-x");
+        let fillButtonPic = document.getElementById("fill-image");
+        let xButtonPic = document.getElementById("x-image");
+
+        document.addEventListener('keyup', function(event) {
+           
+            if(!fillButton.hasAttribute("selected")){
+            xButton.removeAttribute("selected");
+            fillButton.setAttribute("selected", "true");
+
+            xButtonPic.src = "../pictures/XReleased.png";
+            fillButtonPic.src = "../pictures/FillSelected.png";  
+        }   else if(!xButton.hasAttribute("selected")){
+            xButton.setAttribute("selected", "true");
+            fillButton.removeAttribute("selected");
+
+            xButtonPic.src = "../pictures/XPressed.png"
+            fillButtonPic.src = "../pictures/FillRelease.png";
+            }
+            
+        })
     }
 
     handleHomeButtonClicK(){

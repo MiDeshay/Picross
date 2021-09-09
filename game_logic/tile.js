@@ -16,6 +16,8 @@ class Tile{
             }
             
         }.bind(this))
+
+       
     }
 
     checkClick(){
