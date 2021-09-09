@@ -342,9 +342,9 @@ class View{
                     let paddingSize = 0
 
                     if (size % 2 === 0){
-                        paddingSize = size * 20; 
+                        paddingSize = size * 30; 
                     }else{
-                        paddingSize = (size * 20) + 10;
+                        paddingSize = (size * 30) + 10;
                     }
                     
                     row.style.padding = `0px 0px 0px ${paddingSize}px`

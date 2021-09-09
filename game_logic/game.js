@@ -113,7 +113,7 @@ class Game{
 
             let gameBoard = document.getElementById("game-board");
             gameBoard.style.position = "fixed";
-            gameBoard.style.marginLeft = "-140px"
+            gameBoard.style.marginLeft = "-175px"
             gameBoard.style.marginTop = "50px"
             
             let puzzleTitle = document.getElementById("puzzle-title");
