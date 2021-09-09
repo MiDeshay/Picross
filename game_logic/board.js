@@ -41,7 +41,7 @@ class Board{
             const sleep = function(milliseconds){
                 return new Promise(function(resolve){
                     setTimeout(resolve, milliseconds);
-                })
+                }.catch(function(err){})
             }
             for(let i = 0; i < this.size; i++){
                 for(let j = 0; j < this.size; j++){
