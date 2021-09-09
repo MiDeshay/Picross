@@ -8,6 +8,9 @@ html{
     background-size: auto;
 }
 
+.home-title:hover{
+    color: white
+}
   
 button{
     border: 0px;
