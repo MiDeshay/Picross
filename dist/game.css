@@ -319,17 +319,20 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
 }
 
 .game-over-screen h1{
     color: #047c72;
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'Press Start 2P', 'cursive';
     margin-bottom: 70px;
 }
 
 .center-game-over-menu{
     display: flex;
+    width: 400px;
+    margin: auto;
     margin-top: 40px;
 }
 
