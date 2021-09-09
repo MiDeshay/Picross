@@ -15,36 +15,55 @@ class View{
         this.createHtmlGrid.bind(this)();
         this.handlePauseButtonClick();
         this.handleContinueButtonClick();
-        this.handleSpaceBarToggle.bind(this)();
+        this.handleSpaceBarToggle();
         
         this.game = new Game(this.boardSize, this.puzzleObject);
       
         this.handleNewGameButtonClick.bind(this)();
 
-        
-          
     }
+
+
     handleSpaceBarToggle(){
         let fillButton = document.getElementById("toggle-fill");
         let xButton = document.getElementById("toggle-x");
         let fillButtonPic = document.getElementById("fill-image");
         let xButtonPic = document.getElementById("x-image");
+        let allTileEls = document.getElementsByClassName("grid-tile")
 
-        document.addEventListener('keyup', function(event) {
-           
+        document.addEventListener('keydown', function(event) {
+        
+            //fill here
             if(!fillButton.hasAttribute("selected")){
             xButton.removeAttribute("selected");
             fillButton.setAttribute("selected", "true");
-
             xButtonPic.src = "../pictures/XReleased.png";
-            fillButtonPic.src = "../pictures/FillSelected.png";  
-        }   else if(!xButton.hasAttribute("selected")){
+            fillButtonPic.src = "../pictures/FillSelected.png";
+            console.log("1")
+            
+            for(let i = 0; i < allTileEls.length; i++){
+                let tile = allTileEls[i];
+                    tile.classList.remove('red-hover')
+                    tile.classList.add('yellow-hover')
+                
+            }
+           
+            //x here
+        }   else {
             xButton.setAttribute("selected", "true");
             fillButton.removeAttribute("selected");
-
             xButtonPic.src = "../pictures/XPressed.png"
             fillButtonPic.src = "../pictures/FillRelease.png";
+            
+            for(let i = 0; i < allTileEls.length; i++){
+                let tile = allTileEls[i];
+                    tile.classList.add('red-hover')
+                    tile.classList.remove("yellow-hover")        
             }
+        }
+
+            
+            
             
         })
     }
@@ -64,6 +83,7 @@ class View{
         let xButton = document.getElementById("toggle-x");
         let fillButtonPic = document.getElementById("fill-image");
         let xButtonPic = document.getElementById("x-image");
+        let allTileEls = document.getElementsByClassName("grid-tile")
         
         fillButton.setAttribute("selected", "true");
 
@@ -71,11 +91,20 @@ class View{
             if(!fillButton.hasAttribute("selected")){
                 xButton.removeAttribute("selected");
                 fillButton.setAttribute("selected", "true");
-
                 xButtonPic.src = "../pictures/XReleased.png";
-                fillButtonPic.src = "../pictures/FillSelected.png";  
+                fillButtonPic.src = "../pictures/FillSelected.png";
+
+                for(let i = 0; i < allTileEls.length; i++){
+                    let tile = allTileEls[i];
+                        tile.classList.remove('red-hover')
+                        tile.classList.add('yellow-hover')
+                    
+                }
+                
+                   
             }else{
                 fillButtonPic.src = "../pictures/FillSelected.png";
+               
             }
         })
 
@@ -86,6 +115,13 @@ class View{
 
                 xButtonPic.src = "../pictures/XPressed.png"
                 fillButtonPic.src = "../pictures/FillRelease.png";
+
+                for(let i = 0; i < allTileEls.length; i++){
+                    let tile = allTileEls[i];
+                        tile.classList.add('red-hover')
+                        tile.classList.remove('yellow-hover')
+                    
+                }
             }
         })
 
@@ -270,6 +306,7 @@ class View{
                 tile.id = `${i}${j}`
 
                 tile.classList.add("grid-tile")
+                tile.classList.add("yellow-hover")
             
                 if(i === 0 ){
                     if (j < this.boardSize){

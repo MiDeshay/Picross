@@ -1,3 +1,13 @@
+.yellow-hover:hover{
+    background: yellow;
+}
+
+.red-hover:hover{
+    background: red;
+}
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 html{
     height: 100%;
@@ -6,6 +16,8 @@ html{
     background-repeat: no-repeat;
     background-size: auto;
 }
+
+
 
 button{
     border: 0px;
@@ -60,9 +72,7 @@ li {
     background: white;
 }
 
-.grid-tile:hover{
-    background: yellow;
-}
+
 
 
 .colored-in{
