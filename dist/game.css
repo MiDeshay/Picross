@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@font-face {
+    font-family: blocky;
+    src: url(../fonts/FFFFORWA.TTF);
+  }
+
+
 .yellow-hover:hover{
     background: yellow;
 }
@@ -8,7 +16,8 @@
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
 html{
     height: 100%;
     width: 100%;
@@ -80,6 +89,9 @@ li {
 }
 
 .top-hints{
+    font-family: blocky;
+    font-size: 11px;
+    letter-spacing: 2px;
     padding: 0px;
 }
 
@@ -100,12 +112,16 @@ li {
 
 .side-hints{
     padding: 0px;
+    font-family: blocky;
+    font-size: 11px;
     display: flex;
     flex-direction: row;
 }
 
 .side-hint-tile{
-    text-align: center;
+    display:flex;
+    align-items: center;
+    
     width: 20px;
     height: 20px;
     border-top: 1px solid transparent;
