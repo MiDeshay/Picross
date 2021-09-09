@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+html{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(aquamarine, white);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+button{
+    border: 0px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+}
+
+body{
+    margin: auto;
+    margin-top: 70px;
+    text-align: center;
+    padding: 30px;
+    width: 600px;
+    padding-right: 60px;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.grid-row{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+}
+
+.grid-tile{
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+    font-family: monospace;
+    color: gray;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-bottom: none;
+    border-left: none;
+   
+}
+
+.grid-tile{
+    background: white;
+}
+
+.grid-tile:hover{
+    background: yellow;
+}
+
+
+.colored-in{
+    background-color: lightseagreen;
+}
+
+.top-hints{
+    padding: 0px;
+}
+
+.top-hint-tile{
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border-left: 1px solid transparent;
+    list-style-type: none;
+}
+
+.top-hint-top-tile{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.side-hints{
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.side-hint-tile{
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border-top: 1px solid transparent;
+    list-style-type: none;
+}
+
+.side-hint-side-tile{
+    display: flex;
+    flex-direction: row;
+}
+
+#puzzle-title{
+    display: none;
+    position: relative;
+    text-align: center;
+    /* For 10x10 */
+    bottom: 20px;
+    right: 40px;
+
+    /* For 5x5 */
+    /* top: 20px;
+    right: 10px; */
+}
+
+.grid{
+    padding: 0px;
+}
+
+.left-of-board{
+    width: 70px;
+    margin-right: 40px;
+}
+
+.game-screen{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.cursor-toggle{
+    display: flex;
+    padding-bottom: 20px;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+#fill-div{
+    margin-top: 50px;
+}
+
+#pause-button{
+    border: 0px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    height: 50px;
+    width: 50px;
+}
+
+#toggle-fill{
+    border: 0px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    height: 50px;
+    width: 50px;
+}
+
+#toggle-x{
+    border: 0px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    height: 50px;
+    width: 50px;
+}
+
+#fill-image:hover{
+    content: url("../pictures/FillSelected.png");
+}
+
+#x-image:hover{
+    content: url("../pictures/XPressed.png");
+}
+
+
+#pause-image:hover{
+    content: url("../pictures/FixedPauseSelected.png");
+}
+
+#new-game-button-image:hover{
+    content: url("../pictures/NextFilled.png");
+}
+
+#continue-button-image:hover{
+    content: url("../pictures/SmallPlayButtonSelected.png");
+}
+
+#home-button-image:hover{
+    content: url("../pictures/HomeButtonSelected.png");
+}
+
+#replay-button-image:hover{
+    content: url("../pictures/ReplayButtonSelected.png");
+}
+
+#info-button-img:hover{
+    content: url("../pictures/infoButtonSelected.png");
+}
+
+.pause-menu-screen{
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    margin-top: -260px;
+    margin-right: -250px;
+}
+
+
+#pause-menu-screen{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pause-menu-screen > h1{
+    font-size: 50px;
+    color: #047c72;
+    font-family: 'Press Start 2P', 'cursive';
+    margin-bottom: 40px;
+}
+
+.pause-menu{
+    display: flex;
+    
+}
+
+.core-pause-buttons{
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    
+}
+
+.right-buttons{
+    margin-top: 90px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.core-pause-buttons button{
+   margin-left: 30px;
+    
+}
+
+
+#new-game-button{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.left-pause-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-form{
+    position: relative;
+    margin-bottom: -800px;
+}
+
+#lives{
+    font-family:'Press Start 2P', 'cursive';
+    font-size: 35px;
+}
+
+.lives-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+#lives-heart{
+    padding-bottom: 12px;
+}
+
+
+.game-over-screen{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-over-screen h1{
+    color: #047c72;
+    font-size: 50px;
+    font-family: 'Press Start 2P', 'cursive';
+    margin-bottom: 70px;
+}
+
+.center-game-over-menu{
+    display: flex;
+    margin-top: 40px;
+}
+
+.center-game-over-menu button{
+    margin-left: 30px;
+}
+
+
+.game-won-buttons{
+    display: none;
+    position: fixed;
+    flex-direction: row-reverse;
+    top: 75%;
+    left: 50%;
+
+    /* For 10 x 10*/
+    margin-top: -100px;
+    margin-left: -110px;
+
+/*   For 5x5
+    margin-top: -120px;
+    margin-left: -80px; */
+}
+
+#won-new-game-button{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#Instructions{
+    display: none;
+    text-align: left;
+    flex-direction: column;
+    font-size: 23px;
+    line-height: 25px;
+}
+
+#number-rules li{
+    list-style-type: square;
+    margin-bottom: 5px;
+}
+
+#Instructions h1,h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#close-button-image{
+    margin-top: 30px;
+   
+}
+
+#game-board{
+    position: relative;
+    margin: auto;
+
+    /* position: fixed;
+    top: 140px; */
+}
+
+
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+}
+
+.footer-links li{
+    margin-top: 60px;
+    margin-right: 100px;
+}
+
+.right-of-board{
+    margin-left: 30px;
+}
+
+#close-button-image:hover{
+    content: url("../pictures/returnButtonSelected.png");
+}

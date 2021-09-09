@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picross</title>
+    <link rel="stylesheet" type="text/css" href="home_page.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="home-main">
+        <h1 class="home-title">Picross!</h1>
+
+        <div class="home-menu">
+            <form action="game.html">
+                <button class="play-button"><img id="play-button-img" src="../pictures/playButtonDefault.png" height="130" width="325"> </button>
+            </form>
+            
+            <button id="instructions-button"><img id="instructions-button-img" src="../pictures/infoButtonDefault.png" height="130" width="130"></button>
+        
+        </div>
+        <footer>
+            <ul class="footer-links">
+                <li><a href="https://github.com/MiDeshay/PicrossJSProject"><img id="github-logo" src="../pictures/github-logo.png" height="60" width="60"></a></li>
+                <li><a href="https://www.linkedin.com/in/michael-deshay-a76472220/"><img id="linkedin-logo" src="../pictures/LI-Logo.png" height="40" width="160"></a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <div id="Instructions">
+        <div>
+            <h1 class="intro-title">What is Picross?</h1>
+            <p>Picross is a grid-based logic puzzle game where the goal is
+                 to fill in all of the correct tiles on the grid to reveal a
+                  hidden image. To find the correct tiles, use the numbers along the top and side of the grid. The numbers near the grid follow basic rules: </p>
+            <ul id="number-rules">
+                <li>An empty space, number, or set of numbers in a line are positioned next to every vertical and horizontal line in the grid and act as clues for that specific line. </li>
+                <li>The numbers along the top of the grid serve as clues for the vertical lines and the numbers along the side of the grid serve as clues for the horizontal lines.</li>
+                <li>An empty space next to a line of the grid indicates that there are no correct tiles (ie. tiles that need to be filled) in that line.</li>
+                <li>How many numbers there are next to a line of the grid indicates how many line segments there are. </li>
+                <li>A line segment is a connected group of correct tiles that is seperated from other groups of correct tiles by one or more incorrect tiles.</li>
+                <li>A number indicates the number of correct tiles in a segment. </li>
+                <li>The order that the numbers of a set appear in indicate the order in which each segment will appear.</li>
+            </ul>
+        </div>
+        <div>
+        <h2>Basic Strategy</h2>
+            <p>Unlike traditional Picross, this version has a limited amount of incorrect answers. To avoid a game over, a basic strategy to solve a picross puzzle is to cross off or place an 'x' on incorrect tiles to make seeing correct tiles easier. 
+                Thinking logically and deducing which tiles need to be crossed off and which need to be filled is the core of gameplay. Take your time and have fun!
+            </p>
+        </div>
+ 
+        <button class="close-button"><img id="close-button-image" src="../pictures/ReturnbuttonDefault.png" height="125" width="125"></button>
+    </div>
+
+    
+</body>
+</html>
