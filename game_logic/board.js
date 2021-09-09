@@ -58,7 +58,7 @@ class Board{
                         tile.filled = true;
                         tile.solved = true;
                     }
-                    await sleep(50);
+                    await sleep(30);
                 }
             }
             let gameBoard = document.getElementById("game-board");

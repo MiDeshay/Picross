@@ -20,10 +20,10 @@ class Game{
             
         }.bind(this))
 
-        let winTheGameButton = document.getElementById("lives-heart");
-        winTheGameButton.addEventListener("click", function(){
-            this.board.winTheGame()
-        }.bind(this))
+        // let winTheGameButton = document.getElementById("lives-heart");
+        // winTheGameButton.addEventListener("click", function(){
+        //     this.board.winTheGame()
+        // }.bind(this))
 
     
     }
