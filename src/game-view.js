@@ -67,17 +67,17 @@ class View{
     handleNewGameButtonClick(){
        
         let allNewGameButtons = document.getElementsByClassName("new-game-button");
-        let gameFooterLinks = document.getElementsByClassName("game-footer-links");
-        let pauseScreen = document.getElementById("pause-menu-screen");
-        let gameOverScreen = document.getElementById("game-over-screen");
-        let gameScreen = document.getElementById("game-screen");
-        let gameBoard = document.getElementById("game-board");
-        let puzzleTitle = document.getElementById("puzzle-title");
-        let livesContainer = document.getElementById("lives-container")
-        let pauseButton = document.getElementById("pause-button")
-        let newGameButton = document.getElementById("new-game-button")
-        let cursorToggle = document.getElementById("toggle")
-        let gameWonButtons = document.getElementsByClassName("game-won-buttons")
+        // let gameFooterLinks = document.getElementsByClassName("game-footer-links");
+        // let pauseScreen = document.getElementById("pause-menu-screen");
+        // let gameOverScreen = document.getElementById("game-over-screen");
+        // let gameScreen = document.getElementById("game-screen");
+        // let gameBoard = document.getElementById("game-board");
+        // let puzzleTitle = document.getElementById("puzzle-title");
+        // let livesContainer = document.getElementById("lives-container")
+        // let pauseButton = document.getElementById("pause-button")
+        // let newGameButton = document.getElementById("new-game-button")
+        // let cursorToggle = document.getElementById("toggle")
+        // let gameWonButtons = document.getElementsByClassName("game-won-buttons")
 
             
 
@@ -85,55 +85,67 @@ class View{
             let button = allNewGameButtons[i];
 
             button.addEventListener("click", function(){
+
+                location.reload()
+
+            })
+        }
+    }
                 
                 //This deletes the old game grid
                 //this is neccessary since the grid actually persists
                 //through the reset process
-                delete this.game.board.grid;
+                
+            //     delete this.game.board.grid;
   
-                while(this.htmlEl.firstChild){
-                    this.htmlEl.removeChild(this.htmlEl.lastChild);
-                }
+            //     while(this.htmlEl.firstChild){
+            //         this.htmlEl.removeChild(this.htmlEl.lastChild);
+            //     }
 
-                for(let i = 0; i < gameFooterLinks.length; i++){
-                    gameFooterLinks[i].style.display = "flex"
-                }
+            //     for(let i = 0; i < gameFooterLinks.length; i++){
+            //         gameFooterLinks[i].style.display = "flex"
+            //     }
 
-                for(let i = 0; i < gameWonButtons.length; i++){
-                    gameWonButtons[i].style.display = "none"
-                }
+            //     for(let i = 0; i < gameWonButtons.length; i++){
+            //         gameWonButtons[i].style.display = "none"
+            //     }
 
-                this.puzzleObject = this.allPuzzles[Math.floor(Math.random() * this.allPuzzles.length)]
+            //     this.puzzleObject = this.allPuzzles[Math.floor(Math.random() * this.allPuzzles.length)]
 
-                this.boardSize = this.puzzleObject["length"];
-                this.createHtmlGrid();
+            //     this.boardSize = this.puzzleObject["length"];
+            //     this.createHtmlGrid();
                 
-                this.game = new Game(this.boardSize, this.puzzleObject);
+            //     this.game = new Game(this.boardSize, this.puzzleObject);
                 
-                gameBoard.style.position = "relative";
-                gameBoard.style.margin = "0px";
-                cursorToggle.style.display = "initial";
-                puzzleTitle.style.display = "none";
-                pauseButton.style.display = "initial";
-                newGameButton.style.display = "initial";
-                livesContainer.style.display = "initial";
-                pauseScreen.style.display = "none";
-                gameOverScreen.style.display = "none"
-                gameScreen.style.display = "flex";
+            //     gameBoard.style.position = "relative";
+            //     gameBoard.style.margin = "0px";
+            //     cursorToggle.style.display = "initial";
+            //     puzzleTitle.style.display = "none";
+            //     pauseButton.style.display = "initial";
+            //     newGameButton.style.display = "initial";
+            //     livesContainer.style.display = "initial";
+            //     pauseScreen.style.display = "none";
+            //     gameOverScreen.style.display = "none"
+            //     gameScreen.style.display = "flex";
 
 
-            //nudging heart into right spot
-                let livesHeartPic = document.getElementById("lives-heart");
-                if(this.boardSize === 5){
-                    livesHeartPic.style.paddingLeft = "6px"
-                }else{
-                    livesHeartPic.style.paddingLeft = "0px"
-                }
-            }.bind(this))
-        }
+            // //nudging heart into right spot
+            //     let livesHeartPic = document.getElementById("lives-heart");
+            //     if(this.boardSize === 5){
+            //         livesHeartPic.style.paddingLeft = "6px"
+            //     }else{
+            //         livesHeartPic.style.paddingLeft = "0px"
+            //     }
+            // }.bind(this))
+
+            //or just VVV
+
+            
+
+       
 
 
-    }
+    
 
     handleStartOverButtonClick(){
         let allStartOverButtons = document.getElementsByClassName("start-over-button");
