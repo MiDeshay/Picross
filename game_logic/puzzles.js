@@ -240,6 +240,7 @@ function puzzleGenerator(length, name, array){
 }
     let bigTestPuzzle = puzzleGenerator(10, 'Test Of Title', testArr)
     let ballPuzzle = puzzleGenerator(5, "Red Ball", ballArr);
+
     let cherryPuzzle = puzzleGenerator(10, "Cherry by ???", cherryArray);
     let pickachuPuzzle = puzzleGenerator(10, "'Pikachu' by Martego", pikachuArray);
     let pinocchioPuzzle = puzzleGenerator(10, "Pinocchio by ???", PinocchioArray );
@@ -249,7 +250,16 @@ function puzzleGenerator(length, name, array){
     let instagramPuzzle = puzzleGenerator(10, "Insta from FreeBeadsPatterns", instagramArray)
     let amongUsPuzzle = puzzleGenerator(10, "Wasn't Me...", amongUsArray)
 
-    let allPuzzles = [ bigTestPuzzle]
+    let allPuzzles = [ 
+        cherryPuzzle, 
+        pickachuPuzzle, 
+        pinocchioPuzzle, 
+        miniPatternPuzzle,
+        orangePuzzle,
+        curlyPuzzle,
+        instagramPuzzle,
+        amongUsPuzzle
+    ]
 
 //function stringtopuzzle takes a length, a string, an array
 //returns a puzzle object
