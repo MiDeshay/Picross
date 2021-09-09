@@ -139,7 +139,7 @@ li {
     font-family: blocky;
     text-align: center;
     /* For 10x10 */
-    top: 30px;
+    top: 60px;
     letter-spacing: 5px;
     font-size: 40px;
 
@@ -163,7 +163,6 @@ li {
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
-    margin-top: -50px;
 }
 
 .cursor-toggle{
@@ -343,7 +342,7 @@ li {
     display: none;
     position: fixed;
     flex-direction: row-reverse;
-    top: 75%;
+    top: 74%;
     left: 50%;
 
     /* For 10 x 10*/
