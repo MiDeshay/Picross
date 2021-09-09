@@ -136,9 +136,12 @@ li {
 #puzzle-title{
     display: none;
     position: absolute;
+    font-family: blocky;
     text-align: center;
     /* For 10x10 */
-    top: 50px;
+    top: 30px;
+    letter-spacing: 5px;
+    font-size: 40px;
 
     /* For 5x5 */
     /* top: 20px;
