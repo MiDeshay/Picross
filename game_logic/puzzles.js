@@ -241,13 +241,13 @@ function puzzleGenerator(length, name, array){
     let bigTestPuzzle = puzzleGenerator(10, 'Test Of Title', testArr)
     let ballPuzzle = puzzleGenerator(5, "Red Ball", ballArr);
 
-    let cherryPuzzle = puzzleGenerator(10, "Cherry by ???", cherryArray);
+    let cherryPuzzle = puzzleGenerator(10, "Cherry", cherryArray);
     let pickachuPuzzle = puzzleGenerator(10, "'Pikachu' by Martego", pikachuArray);
-    let pinocchioPuzzle = puzzleGenerator(10, "Pinocchio by ???", PinocchioArray );
+    let pinocchioPuzzle = puzzleGenerator(10, "Pinocchio", PinocchioArray );
     let miniPatternPuzzle = puzzleGenerator(10, "Mini Pattern by aleonblue", miniPatternArray);
-    let orangePuzzle = puzzleGenerator(10,"Orange N Stuff by ???", OrangeArray )
-    let curlyPuzzle = puzzleGenerator(10, "Curlycue by ???", curlyArray  )
-    let instagramPuzzle = puzzleGenerator(10, "Insta from FreeBeadsPatterns", instagramArray)
+    let orangePuzzle = puzzleGenerator(10,"Orange N Stuff", OrangeArray )
+    let curlyPuzzle = puzzleGenerator(10, "Curlycue", curlyArray  )
+    let instagramPuzzle = puzzleGenerator(10, "Instagram", instagramArray)
     let amongUsPuzzle = puzzleGenerator(10, "Wasn't Me...", amongUsArray)
 
     let allPuzzles = [ 

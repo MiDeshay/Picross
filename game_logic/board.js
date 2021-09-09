@@ -4,11 +4,44 @@ class Board{
     constructor(size, puzzleObject){
         this.puzzleObject = puzzleObject;
         this.size = size
+        this.winning = false;
         this.grid = this.makeGrid()
         this.makeHints.bind(this)()
 
     }
 
+    async winTheGame(){
+        if (!this.winning){
+            this.winning = true;
+            const sleep = function(milliseconds){
+                return new Promise(function(resolve){
+                    setTimeout(resolve, milliseconds);
+                })
+            }
+            for(let i = 0; i < this.size; i++){
+                for(let j = 0; j < this.size; j++){
+                    let tile = this.grid[i][j];
+
+                    if(!tile.solved){
+                        if(tile.needToFill){
+                            tile.tileEl.style.backgroundColor = "black";
+                            
+                        }else{
+                            let x = document.createTextNode("x")
+                            tile.tileEl.appendChild(x);
+                        }
+                        tile.filled = true;
+                        tile.solved = true;
+                    }
+                    await sleep(50);
+                }
+            }
+            let gameBoard = document.getElementById("game-board");
+            gameBoard.click()
+     
+        }
+        
+    }
 
 
     livesLost(){
