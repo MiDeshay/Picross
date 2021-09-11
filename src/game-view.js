@@ -39,7 +39,6 @@ class View{
             fillButton.setAttribute("selected", "true");
             xButtonPic.src = "../pictures/XReleased.png";
             fillButtonPic.src = "../pictures/FillSelected.png";
-            console.log("1")
             
             for(let i = 0; i < allTileEls.length; i++){
                 let tile = allTileEls[i];
