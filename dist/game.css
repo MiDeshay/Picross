@@ -43,6 +43,7 @@ button{
     border: 0px;
     background-color: Transparent;
     background-repeat:no-repeat;
+    cursor: pointer;
 }
 
 body{
@@ -322,6 +323,7 @@ li {
 
 #lives-heart{
     padding-bottom: 12px;
+    cursor: pointer;
 }
 
 
@@ -421,3 +423,9 @@ li {
 #lives-heart:hover{
     content: url("../pictures/HeartSecret.png");
 }
+
+.hurry-up{
+    width: fit-content;
+    margin: 0 auto;
+}
+
