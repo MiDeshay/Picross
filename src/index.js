@@ -37,9 +37,7 @@ if(document.URL.includes("game.html")){
     })
 
   
-}
-
-if(document.URL.includes("index.html")){
+}else{
 
     document.addEventListener("DOMContentLoaded", function(){
         let infoButton = document.getElementById("instructions-button")
