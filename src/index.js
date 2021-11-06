@@ -5,7 +5,7 @@ import {allPuzzles} from "../game_logic/puzzles";
 if(document.URL.includes("game.html")){
     document.addEventListener("DOMContentLoaded", function(){
 
-
+ 
         const boardEl = document.getElementById("game-board")
         new View(boardEl, allPuzzles);
 
@@ -38,7 +38,6 @@ if(document.URL.includes("game.html")){
 
   
 }else{
-
     document.addEventListener("DOMContentLoaded", function(){
         let infoButton = document.getElementById("instructions-button")
         let homeMenu = document.getElementById("home-main");
