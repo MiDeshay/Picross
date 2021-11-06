@@ -37,28 +37,23 @@ if(document.URL.includes("game.html")){
     })
 
   
-}
-
-
+}else{
     document.addEventListener("DOMContentLoaded", function(){
         let infoButton = document.getElementById("instructions-button")
         let homeMenu = document.getElementById("home-main");
         let instructions = document.getElementById("Instructions");
         let closeButton = document.getElementsByClassName("close-button");
 
-        if(homeMenu && infoButton && instructions && closeButton){
-
-            infoButton.addEventListener("click", function(){
-            homeMenu.style.display = "none";
-            instructions.style.display = "flex";
-            })
-            closeButton[0].addEventListener("click", function(){
-                homeMenu.style.display = "initial";
-                instructions.style.display = "none";
-            })
-        }
+        infoButton.addEventListener("click", function(){
+        homeMenu.style.display = "none";
+        instructions.style.display = "flex";
     })
-
+        closeButton[0].addEventListener("click", function(){
+            homeMenu.style.display = "initial";
+            instructions.style.display = "none";
+        })
+    })
+}
    
   
 
